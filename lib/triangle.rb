@@ -1,6 +1,10 @@
 class Triangle
+  attr_reader :a, :b, :c
 
-  def initialize(length1, length2, length3)
+  def initialize(a, b, c)
+    @a = a
+    @b = b
+    @c = c
   end
 
   def kind
