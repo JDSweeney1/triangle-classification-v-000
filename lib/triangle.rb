@@ -17,3 +17,10 @@ class Triangle
     end
   end
 end
+
+def confirm_triangle
+end
+
+class TriangleError < StandardError
+end
+  
