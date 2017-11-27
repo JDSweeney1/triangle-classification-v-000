@@ -17,12 +17,12 @@ class Triangle
       :scalene
     end
   end
-end
 
-def confirm_triangle
-  triangle = [(a + b > c), (a + c > b), (b + c > a)]
-  [a, b, c].each {|s| triangle << false if s <= 0}
-  raise TriangleError if triangle.include?(false)
+  def confirm_triangle
+    triangle = [(a + b > c), (a + c > b), (b + c > a)]
+    [a, b, c].each {|s| triangle << false if s <= 0}
+    raise TriangleError if triangle.include?(false)
+  end
 end
 
 class TriangleError < StandardError
