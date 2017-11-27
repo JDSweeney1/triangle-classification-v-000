@@ -22,7 +22,7 @@ end
 def confirm_triangle
   triangle = [(a + b > c), (a + c > b), (b + c > a)]
   [a, b, c].each {|s| triangle << false if s <= 0}
-  raise TriangleError if triangle.include?(false)]
+  raise TriangleError if triangle.include?(false)
 end
 end
 
