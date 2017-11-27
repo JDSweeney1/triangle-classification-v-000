@@ -24,6 +24,7 @@ def confirm_triangle
   [a, b, c].each {|s| triangle << false if s <= 0}
   raise TriangleError if triangle.include?(false)]
 end
+end
 
 class TriangleError < StandardError
 end
